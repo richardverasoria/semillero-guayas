@@ -1,155 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semillero Guayas — Formación Musical Infantojuvenil</title>
-<meta name="description" content="Semillero Guayas: formación musical orquestal y coral para niñas, niños y jóvenes del Ecuador. Inclusión, excelencia y transformación social.">
-<meta property="og:title" content="Semillero Guayas — Formación Musical Infantojuvenil">
-<meta property="og:description" content="Formación musical orquestal y coral para niñas, niños y jóvenes del Ecuador. Inclusión, excelencia y transformación social.">
+<title>Semillero Guayas | Cultivando el Futuro del Campo Ecuatoriano</title>
+<meta name="description" content="Semillero Guayas - formacion musical y desarrollo infantojuvenil en el campo ecuatoriano. Cultivamos talento, comunidad y futuro.">
+<meta name="author" content="Semillero Guayas">
+<meta property="og:title" content="Semillero Guayas">
+<meta property="og:description" content="Cultivando el futuro del campo ecuatoriano a traves de la musica y la educacion.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/portada.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Semillero Guayas — Formación Musical Infantojuvenil">
-<meta name="twitter:description" content="Formación musical orquestal y coral para niñas, niños y jóvenes del Ecuador.">
-<meta name="twitter:image" content="assets/portada.png">
-<meta property="og:url" content="https://semilleroguayas.com">
-<link rel="me" href="https://www.instagram.com/semilleroguayas" type="text/html">
-<link rel="me" href="https://www.tiktok.com/@semillero_guayas" type="text/html">
+<meta property="og:site_name" content="Semillero Guayas">
+<meta property="og:locale" content="es_EC">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<link rel="me" href="https://www.instagram.com/semilleroguayas">
+<link rel="me" href="https://www.tiktok.com/@semillero_guayas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="brand">
-      <img src="assets/logo.eps" alt="Semillero Guayas" class="brand-logo" onerror="this.src=assets/portada.png">
-      <span class="brand-name">Semillero Guayas</span>
-    </div>
-    <nav class="nav">
-      <a href="#nosotros">Nosotros</a>
-      <a href="#programas">Programas</a>
-      <a href="#impacto">Impacto</a>
-      <a href="#auspiciantes">Auspiciadores</a>
-      <a href="#redes">Redes</a>
-      <a href="#contacto">Contacto</a>
+
+<div class="loader" id="loader"><div class="loader__leaf"></div></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<a href="#" class="back-to-top" id="backToTop" aria-label="Volver arriba">&#8593;</a>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#inicio" class="header__brand">
+      <img src="assets/logo.png" alt="Semillero Guayas" class="header__logo">
+      <span class="header__name">Semillero <strong>Guayas</strong></span>
+    </a>
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#inicio" class="nav__link">Inicio</a></li>
+        <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+        <li><a href="#programas" class="nav__link">Programas</a></li>
+        <li><a href="#galeria" class="nav__link">Galeria</a></li>
+        <li><a href="#impacto" class="nav__link">Impacto</a></li>
+        <li><a href="#contacto" class="nav__link">Contacto</a></li>
+      </ul>
+      <div class="header__social">
+        <a href="https://www.instagram.com/semilleroguayas" target="_blank" rel="noopener" aria-label="Instagram" class="header__social-link"><img src="assets/icon-instagram.svg" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@semillero_guayas" target="_blank" rel="noopener" aria-label="TikTok" class="header__social-link"><img src="assets/icon-tiktok.svg" alt="TikTok"></a>
+      </div>
+      <a href="#contacto" class="nav__cta">Contáctanos</a>
     </nav>
-    <div class="social-header">
-      <a href="https://www.instagram.com/semilleroguayas" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      </a>
-      <a href="https://www.tiktok.com/@semillero_guayas" target="_blank" rel="noopener" aria-label="TikTok">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.51a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.75a8.18 8.18 0 0 0 4.76 1.52v-3.4a4.85 4.85 0 0 1-1-.18z"/></svg>
-      </a>
-    </div>
+    <button class="header__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
-<section class="hero">
-  <div class="container">
-    <img src="assets/portada.png" alt="Portada" class="hero-img">
-    <h1>Semillero Guayas</h1>
-    <p class="hero-sub">Formación musical orquestal y coral para niñas, niños, jóvenes y estudiantes de música del Ecuador.</p>
-    <a href="#nosotros" class="btn">Conoce el proyecto</a>
+
+<section class="hero" id="inicio">
+  <div class="hero__bg" style="background-image:url('assets/portada.png')"></div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <p class="hero__eyebrow">Formacion • Comunidad • Futuro</p>
+    <h1 class="hero__title">Cultivando el futuro del campo ecuatoriano</h1>
+    <p class="hero__subtitle">Semillero Guayas acompana a ninos y jovenes a traves de la musica, la educacion y el arte, sembrando talento en nuestras comunidades rurales.</p>
+    <div class="hero__actions">
+      <a href="#programas" class="btn btn--primary">Ver programas</a>
+      <a href="#nosotros" class="btn btn--ghost">Conoce mas</a>
+    </div>
   </div>
+  <div class="hero__scroll">&#8595;</div>
 </section>
-<section id="nosotros" class="section">
+
+<section class="nosotros" id="nosotros">
   <div class="container">
-    <h2>Nosotros</h2>
-    <p class="lead">Semillero Guayas es un proyecto de formación musical orientado al fortalecimiento de la práctica orquestal y coral de niñas, niños, jóvenes y estudiantes de música del Ecuador. A través de un modelo pedagógico de excelencia, promueve el desarrollo artístico, la inclusión, el trabajo colaborativo y la formación en valores, utilizando la música como herramienta de transformación social.</p>
-    <div class="split">
-      <div class="card">
-        <img src="assets/vision.jpeg" alt="Visión" class="card-img">
-        <h3>Visión</h3>
-        <p>Consolidarse como referente nacional en la formación orquestal y coral infantojuvenil, impulsando nuevas generaciones de músicos y directores comprometidos con la excelencia, la inclusión y los valores humanísticos.</p>
+    <div class="section-head reveal">
+      <span class="section-head__tag">Quienes somos</span>
+      <h2 class="section-head__title">Sembrando talento en el campo</h2>
+    </div>
+    <div class="nosotros__grid">
+      <div class="nosotros__card reveal">
+        <img src="assets/mision.jpeg" alt="Mision" class="nosotros__img">
+        <h3>Mision</h3>
+        <p>Formar ninos y jovenes del Guayas a traves de la musica y el arte, generando espacios de creatividad, pertenencia y desarrollo humano en zonas rurales.</p>
       </div>
-      <div class="card">
-        <img src="assets/mision.jpeg" alt="Misión" class="card-img">
-        <h3>Misión</h3>
-        <p>Impulsar la formación musical de excelencia de niñas, niños y jóvenes del Guayas, fortaleciendo su desarrollo artístico, humano y social a través de la práctica orquestal y coral.</p>
+      <div class="nosotros__card reveal">
+        <img src="assets/vision.jpeg" alt="Vision" class="nosotros__img">
+        <h3>Vision</h3>
+        <p>Ser la red de formacion artistica infantojuvenil mas grande del litoral ecuatoriano, donde cada semilla de talento florezca en oportunidad.</p>
+      </div>
+      <div class="nosotros__card reveal">
+        <img src="assets/auspiciantes.jpeg" alt="Aliados" class="nosotros__img">
+        <h3>Valores</h3>
+        <p>Compromiso, comunidad, alegria y excelencia. Cada clase es una huerta donde crece el futuro de nuestra tierra.</p>
       </div>
     </div>
   </div>
 </section>
-<section id="programas" class="section section-alt">
+
+<section class="programas" id="programas">
   <div class="container">
-    <h2>Programas</h2>
-    <div class="grid">
-      <div class="card"><h3>Orquesta Infantil</h3><p>Formación instrumental y práctica de conjunto.</p></div>
-      <div class="card"><h3>Coro Juvenil</h3><p>Canto coral y técnica vocal para jóvenes.</p></div>
-      <div class="card"><h3>Escuela de Directores</h3><p>Formación de nuevas generaciones de directores.</p></div>
-      <div class="card"><h3>Inclusión y Valores</h3><p>La música como transformación social.</p></div>
-      <div class="card"><h3>Modelo Pedagógico</h3><p>Excelencia con metodología nacional.</p></div>
-      <div class="card"><h3>Colaboración Iberoamericana</h3><p>Vinculación regional de formación.</p></div>
+    <div class="section-head reveal">
+      <span class="section-head__tag">Lo que hacemos</span>
+      <h2 class="section-head__title">Nuestros programas</h2>
+    </div>
+    <div class="programas__grid">
+      <div class="programa reveal"><span class="programa__icon">&#9835;</span><h3>Coro Infantil</h3><p>Canto y armonia para ninos de 6 a 12 anos.</p></div>
+      <div class="programa reveal"><span class="programa__icon">&#127925;</span><h3>Instrumentos</h3><p>Guitarra, piano y percusion desde cero.</p></div>
+      <div class="programa reveal"><span class="programa__icon">&#127917;</span><h3>Danza y Teatro</h3><p>Expresion corporal y identidad cultural.</p></div>
+      <div class="programa reveal"><span class="programa__icon">&#127912;</span><h3>Artes Visuales</h3><p>Pintura, muralismo y creacion manual.</p></div>
+      <div class="programa reveal"><span class="programa__icon">&#129309;</span><h3>Formacion de Docentes</h3><p>Acompanamos a educadores rurales.</p></div>
+      <div class="programa reveal"><span class="programa__icon">&#127881;</span><h3>Festivales</h3><p>Escenarios abiertos para nuestras comunidades.</p></div>
     </div>
   </div>
 </section>
-<section id="impacto" class="section">
+
+<section class="galeria" id="galeria">
   <div class="container">
-    <h2>Impacto</h2>
-    <div class="stats">
-      <div class="stat"><span class="num" data-target="200">0</span><span class="label">Estudiantes formados</span></div>
-      <div class="stat"><span class="num" data-target="15">0</span><span class="label">Comunidades alcanzadas</span></div>
-      <div class="stat"><span class="num" data-target="6">0</span><span class="label">Programas activos</span></div>
-      <div class="stat"><span class="num" data-target="1">0</span><span class="label">Referente nacional</span></div>
+    <div class="section-head reveal">
+      <span class="section-head__tag">En imagenes</span>
+      <h2 class="section-head__title">Nuestra galeria</h2>
+    </div>
+    <div class="galeria__grid" id="galeriaGrid">
+      <img src="assets/galeria/1.jpg" alt="Semillero Guayas" class="galeria__item reveal">
+      <img src="assets/galeria/13 OCT 1.jpg" alt="Semillero Guayas" class="galeria__item reveal">
+      <img src="assets/galeria/16 JUN 3.jpg" alt="Semillero Guayas" class="galeria__item reveal">
+      <img src="assets/galeria/17 OCT.jpg" alt="Semillero Guayas" class="galeria__item reveal">
+      <img src="assets/galeria/20 FEB 1.jpg" alt="Semillero Guayas" class="galeria__item reveal">
+      <img src="assets/galeria/20210612_095611.jpg" alt="Semillero Guayas" class="galeria__item reveal">
+      <img src="assets/galeria/20210722_170541.jpg" alt="Semillero Guayas" class="galeria__item reveal">
+      <img src="assets/galeria/20210828_091939.jpg" alt="Semillero Guayas" class="galeria__item reveal">
+      <img src="assets/galeria/20210828_095327.jpg" alt="Semillero Guayas" class="galeria__item reveal">
+      <img src="assets/galeria/20210828_095346.jpg" alt="Semillero Guayas" class="galeria__item reveal">
+      <img src="assets/galeria/20220528_124945.jpg" alt="Semillero Guayas" class="galeria__item reveal">
+      <img src="assets/galeria/21 DIC 1.jpg" alt="Semillero Guayas" class="galeria__item reveal">
     </div>
   </div>
 </section>
-<section id="auspiciantes" class="section section-alt">
+
+<section class="impacto" id="impacto">
   <div class="container">
-    <h2>Auspiciadores y Colaboradores</h2>
-    <p class="lead">Respaldo de instituciones iberoamericanas y ecuatorianas comprometidas con la educación y la cultura.</p>
-    <img src="assets/auspiciantes.jpeg" alt="Auspiciadores" class="full-img">
-    <ul class="sponsor-list">
-      <li><strong>IBEROORQUESTAS Juveniles</strong> — Programa marco de formación orquestal</li>
-      <li><strong>OEI</strong> — Organización de Estados Iberoamericanos</li>
-      <li><strong>IFAIC</strong> — Instituto de Fomento a la Creatividad (Min. de Cultura)</li>
-      <li><strong>Casa de la Cultura Ecuatoriana</strong> — Núcleo del Guayas</li>
-      <li><strong>Secretaría General Iberoamericana</strong> — Patrocinio institucional</li>
-    </ul>
-  </div>
-</section>
-<section id="contacto" class="section">
-  <div class="container">
-    <h2>Contacto</h2>
-    <p class="lead">¿Quieres sumarte al Semillero Guayas? Escríbenos.</p>
-    <form class="contact-form" onsubmit="return false;">
-      <input type="text" placeholder="Nombre" aria-label="Nombre">
-      <input type="email" placeholder="Correo" aria-label="Correo">
-      <select aria-label="Asunto"><option>Inscripción</option><option>Auspicio</option><option>Prensa</option><option>General</option></select>
-      <textarea placeholder="Mensaje" rows="4"></textarea>
-      <button class="btn" type="submit">Enviar</button>
-    </form>
-  </div>
-</section>
-<section id="redes" class="section section-alt">
-  <div class="container">
-    <h2>Síguenos en Redes Sociales</h2>
-    <p class="lead">Mantente conectado con Semillero Guayas en nuestras plataformas.</p>
-    <div class="social-links">
-      <a href="https://www.instagram.com/semilleroguayas" target="_blank" rel="noopener noreferrer" class="social-link instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-        Instagram
-      </a>
-      <a href="https://www.tiktok.com/@semillero_guayas" target="_blank" rel="noopener noreferrer" class="social-link tiktok">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.57 6.33 6.33 0 0 0 9.37 22a6.33 6.33 0 0 0 6.37-6.23V9.07a8.16 8.16 0 0 0 3.85.96V6.69z"/></svg>
-        TikTok
-      </a>
+    <div class="section-head reveal">
+      <span class="section-head__tag">Lo que logramos</span>
+      <h2 class="section-head__title">Nuestro impacto</h2>
+    </div>
+    <div class="impacto__grid">
+      <div class="impacto__item reveal"><span class="impacto__num" data-target="320">0</span><p>Ninos formados</p></div>
+      <div class="impacto__item reveal"><span class="impacto__num" data-target="14">0</span><p>Comunidades</p></div>
+      <div class="impacto__item reveal"><span class="impacto__num" data-target="6">0</span><p>Programas</p></div>
+      <div class="impacto__item reveal"><span class="impacto__num" data-target="9">0</span><p>Anos de camino</p></div>
     </div>
   </div>
 </section>
-<footer class="site-footer">
-  <div class="container">
-    <div class="social-footer">
-      <a href="https://www.instagram.com/semilleroguayas" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      </a>
-      <a href="https://www.tiktok.com/@semillero_guayas" target="_blank" rel="noopener" aria-label="TikTok">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.51a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.75a8.18 8.18 0 0 0 4.76 1.52v-3.4a4.85 4.85 0 0 1-1-.18z"/></svg>
-      </a>
+
+<section class="cta">
+  <div class="container cta__inner reveal">
+    <h2>¿Quieres sembrar con nosotros?</h2>
+    <p>Apoya, participa o inscribe a un nino. Cada grano cuenta.</p>
+    <a href="#contacto" class="btn btn--primary">Hablemos</a>
+  </div>
+</section>
+
+<footer class="footer" id="contacto">
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <img src="assets/logo.png" alt="Semillero Guayas" class="footer__logo">
+      <p>Cultivando el futuro del campo ecuatoriano a traves de la musica y la educacion.</p>
     </div>
-    <p>Semillero Guayas · Proyecto de formación musical del Guayas, Ecuador</p>
-    <p class="small">Impulsado por IATOMATIONS · © 2026</p>
+    <div class="footer__col">
+      <h4>Contacto</h4>
+      <ul>
+        <li>&#128231; info@semilleroguayas.org</li>
+        <li>&#128241; +593 4 XXX-XXXX</li>
+        <li>&#127960; Guayas, Ecuador</li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4>Síguenos</h4>
+      <div class="footer__social">
+        <a href="https://www.instagram.com/semilleroguayas" target="_blank" rel="noopener" aria-label="Instagram" class="social-link"><img src="assets/icon-instagram.svg" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@semillero_guayas" target="_blank" rel="noopener" aria-label="TikTok" class="social-link"><img src="assets/icon-tiktok.svg" alt="TikTok"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; 2026 Semillero Guayas. Todos los derechos reservados.</p>
   </div>
 </footer>
+
+<div class="lightbox" id="lightbox"><img src="" alt="" id="lightboxImg"><span class="lightbox__close" id="lightboxClose">&times;</span></div>
+
 <script src="main.js"></script>
 </body>
 </html>
