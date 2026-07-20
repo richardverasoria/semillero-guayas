@@ -1,0 +1,27 @@
+version: ~
+stackbitVersion: 0.6.0
+ssgName: html
+nodeVersion: 18
+plugins:
+  - name: '@stackbit/cms-git'
+cms:
+  name: git
+staticDir: 04-Entregables
+assets:
+  referenceType: relative
+  staticDir: 04-Entregables/assets
+models:
+  page:
+    type: page
+    urlPath: "/{slug}"
+    filePath: "04-Entregables/{slug}.html"
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: description
+        type: string
+      - name: sections
+        type: list
+        items:
+          type: string
