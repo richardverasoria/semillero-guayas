@@ -153,3 +153,42 @@ a{text-decoration:none;color:inherit}
   .galeria__item{height:180px}
   .hero__actions{flex-direction:column}
 }
+
+/* Nosotros intro */
+.nosotros__intro{max-width:760px;margin:0 auto 3rem;text-align:center}
+.nosotros__intro p{margin-bottom:1rem;color:var(--muted);font-size:1.05rem}
+.section-head__sub{color:var(--green-light);font-weight:600;margin-top:.4rem}
+
+/* Programa texto */
+.programa p{color:var(--muted);font-size:.95rem;margin-top:.4rem}
+
+/* Logros */
+.logros{padding:5rem 0;background:var(--ivory)}
+
+/* Noticias */
+.noticias{padding:6rem 0;background:var(--white)}
+.noticias__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.noticia{background:var(--ivory);border-radius:16px;padding:1.6rem;box-shadow:var(--shadow);transition:var(--transition);border-top:4px solid var(--gold)}
+.noticia:hover{transform:translateY(-6px)}
+.noticia__tag{display:inline-block;background:var(--green);color:#fff;font-size:.75rem;padding:.25rem .7rem;border-radius:50px;margin-bottom:.8rem;font-weight:600}
+.noticia h3{color:var(--green-dark);font-size:1.1rem;margin-bottom:.5rem}
+.noticia p{color:var(--muted);font-size:.92rem}
+
+/* Formulario */
+.formulario{padding:6rem 0;background:linear-gradient(135deg,var(--green-dark),var(--green));color:#fff}
+.formulario .section-head__tag,.formulario .section-head__title{color:#fff}
+.form{max-width:680px;margin:0 auto;background:rgba(255,255,255,.06);padding:2.2rem;border-radius:18px;backdrop-filter:blur(6px)}
+.form__row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-bottom:1.2rem}
+.form label{display:flex;flex-direction:column;gap:.4rem;font-weight:600;font-size:.9rem}
+.form input,.form select{padding:.8rem 1rem;border:0;border-radius:10px;font-family:inherit;font-size:.95rem;background:rgba(255,255,255,.95);color:var(--ink)}
+.form .btn{width:100%;margin-top:.5rem;font-size:1.05rem}
+.form__note{text-align:center;opacity:.8;font-size:.85rem;margin-top:1rem}
+.form__note{color:#e8f5ec}
+
+/* Responsive ajustes */
+@media(max-width:1024px){
+  .noticias__grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .noticias__grid,.form__row{grid-template-columns:1fr}
+}
